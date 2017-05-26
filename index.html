@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NOTES</title>
+    <link rel="stylesheet" href="notes.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+    <div class="col-xs-3">
+      <button id="btn1" class="btn-success btn-lg" onclick="disp()">Add</button>
+    </div>
+    <div class="col-xs-3">
+      <button id="btn1" class="btn-primary btn-lg" onclick="on()">View</button>
+    </div>
+    <div class="col-xs-3">
+      <button id="btn1" class="btn-danger btn-lg" onclick="clr()">Clear</button>
+    </div>
+    <div class="col-xs-3">
+      <button id="btn1" class="btn-warning btn-lg" onclick="save()">Save</button>
+    </div>
+  </div>
+  <div id="overlay">
+  </div>
+</div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <input id="text" type="text" placeholder="Write here" />
+        <div>
+          <button id="butn" class="btn-success btn-block btn-lg" onclick="calloverlay()">DONE</button>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="notes.js"></script>
+</html>
